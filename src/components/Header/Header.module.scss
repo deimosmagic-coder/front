@@ -1,0 +1,47 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.header {
+  padding: 0 var(--header-padding);
+  border-bottom: 1px solid $color-border;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 38.18px;
+  height: 25.13px;
+}
+
+.joinButton {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 9px 25px;
+  outline: none;
+  border: 1px solid $color-border;
+  border-radius: 35px;
+  line-height: 22.7px;
+  font-size: 16px;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $color-bg-card;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+  width: fit-content;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: #1a1a1a;
+  }
+}

@@ -1,0 +1,506 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/components/AboutSection/AboutGlow.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.AboutGlow_canvas__fm4lm {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 50%;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/components/AboutSection/AboutSection.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.AboutSection_about__XKtqT {
+  padding: 120px 0;
+  margin-top: 174px;
+}
+
+.AboutSection_container__utPh3 {
+  padding: 0 var(--container-padding);
+}
+
+.AboutSection_aboutInfo__u9YBZ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AboutSection_content__zzvLx {
+  display: grid;
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.AboutSection_title__NQ4ev {
+  font-weight: 400;
+  font-size: 39.06px;
+  line-height: 48px;
+  background: radial-gradient(circle, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.4) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.AboutSection_desc__fVucj {
+  color: #c5c5c5;
+  line-height: 24px;
+  font-size: 15.63px;
+}
+
+.AboutSection_glowWrapper__KZO_b {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutSection_chatBubble__pCr33 {
+  position: relative;
+  z-index: 1;
+  width: 178px;
+  height: 178px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 98px 50px 50px;
+}
+.AboutSection_chatBubble__pCr33::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: -3px;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  -webkit-clip-path: polygon(96% 14%, 95% 95%, 5% 95%);
+          clip-path: polygon(96% 14%, 95% 95%, 5% 95%);
+}
+
+.AboutSection_chatSmile__arLZD {
+  width: 70px;
+  height: 35px;
+  background: #0217ce;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  z-index: 1;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/components/GlowCanvas/GlowCanvas.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.GlowCanvas_canvas__5fAno {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/components/ElapseIntuition/ElapseIntuition.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ElapseIntuition_section__cXyRX {
+  margin-top: 157px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ElapseIntuition_container__gvx_3 {
+  padding: 96px 72px;
+  position: relative;
+  z-index: 1;
+}
+
+.ElapseIntuition_content__mDrOk {
+  padding: 104px 338px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.ElapseIntuition_circle__su0FC {
+  background-color: #000;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ElapseIntuition_ascii__QtpEp {
+  transform: translate(-6px, -15px);
+}
+
+.ElapseIntuition_text__qcQtS {
+  display: grid;
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.ElapseIntuition_title__INwvr {
+  font-weight: 400;
+  font-size: 39.06px;
+  line-height: 48px;
+  background: radial-gradient(circle, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.4) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.ElapseIntuition_desc__3SVWz {
+  color: #c5c5c5;
+  line-height: 24px;
+  font-size: 15.63px;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/components/Header/Header.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Header_header__MwWvM {
+  padding: 0 var(--header-padding);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.Header_container__Aasa1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.Header_logo__V9h3K {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 38.18px;
+  height: 25.13px;
+}
+
+.Header_joinButton__UDZrM {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 9px 25px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 35px;
+  line-height: 22.7px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0c0c0c;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  touch-action: manipulation;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+.Header_joinButton__UDZrM:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  background-color: #1a1a1a;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/components/HeroSection/HeroSection.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.HeroSection_hero___n6pR {
+  padding: 208px 0 64px;
+}
+
+.HeroSection_container__F0FJb {
+  padding: 0 var(--container-padding);
+}
+
+.HeroSection_content__s9AUi {
+  display: grid;
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.HeroSection_title__UbcOU {
+  font-weight: 400;
+  font-size: 54.8px;
+  line-height: 67.2px;
+  background: radial-gradient(circle, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.4) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: HeroSection_fadeInUp__RrPN4 0.8s ease both;
+}
+
+.HeroSection_desc__TIqdM {
+  color: #c5c5c5;
+  line-height: 24px;
+  font-size: 15.63px;
+  animation: HeroSection_fadeInUp__RrPN4 0.8s ease 0.15s both;
+}
+
+.HeroSection_joinButton__36mIi {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 9px 25px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 35px;
+  line-height: 22.7px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0c0c0c;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  touch-action: manipulation;
+  width: -moz-fit-content;
+  width: fit-content;
+  animation: HeroSection_fadeInUp__RrPN4 0.8s ease 0.3s both;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+.HeroSection_joinButton__36mIi:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  background-color: #1a1a1a;
+}
+
+.HeroSection_contentInfo__1gTyP {
+  margin-top: 100px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  animation: HeroSection_fadeInUp__RrPN4 0.8s ease 0.45s both;
+}
+
+.HeroSection_borderImg__vDkNp {
+  background-color: #1a1a1a;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.HeroSection_infoTitle__4NJR_ {
+  color: #858585;
+  line-height: 20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.HeroSection_infoDesc__2HtJP {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@keyframes HeroSection_fadeInUp__RrPN4 {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/components/Timeline/ImageGlow.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ImageGlow_canvas__Qe9KQ {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  mix-blend-mode: overlay;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/components/Timeline/ImageFade.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ImageFade_canvas__N0rKA {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/components/Timeline/Timeline.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Timeline_timeline__Aw9Pj {
+  position: relative;
+  margin-top: 206px;
+}
+.Timeline_timeline__Aw9Pj::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  background: #1e1e1e;
+  z-index: 0;
+}
+
+.Timeline_containerLine__KxZSu {
+  padding: 0 80px;
+}
+
+.Timeline_section__xLYVC {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 64px;
+  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #000;
+  z-index: 1;
+  will-change: opacity, transform;
+}
+
+.Timeline_dot__mz6MQ {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Timeline_section__xLYVC:hover .Timeline_dot__mz6MQ {
+  transform: translate(-50%, -50%) scale(1.5);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+}
+
+.Timeline_leftContent__JiTLI {
+  width: 544px;
+  display: grid;
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.Timeline_rightContent__JsnJG {
+  display: grid;
+  grid-gap: 42px;
+  gap: 42px;
+}
+
+.Timeline_title__mBQGp {
+  font-weight: 400;
+  font-size: 39.06px;
+  line-height: 48px;
+  background: radial-gradient(circle, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.4) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.Timeline_desc__sO04O {
+  color: #c5c5c5;
+  line-height: 24px;
+  font-size: 15.63px;
+}
+
+.Timeline_imgWrapper__AWJvq {
+  display: flex;
+  justify-content: center;
+}
+.Timeline_imgWrapper__AWJvq img {
+  max-width: 100%;
+  display: block;
+}
+
+.Timeline_imgWrapperGlow__FJpA0 {
+  position: relative;
+}
+
+.Timeline_img__BW1mX {
+  position: relative;
+  z-index: 1;
+}
+
+.Timeline_pad1__JAfM3 {
+  padding: 120px 96px;
+}
+
+.Timeline_pad2__UOxH3 {
+  padding: 110px 0;
+}
+
+.Timeline_pad3__zcQe2 {
+  padding: 165px 0;
+}
+
+.Timeline_pad4__XWkcC {
+  padding: 120px 48px;
+}
+
+.Timeline_pad5__Towxr {
+  padding: 212px 30px;
+}
+
+@keyframes Timeline_fadeIn__E31xe {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/components/TitleSection/TitleSection.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.TitleSection_title__t7cGJ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 360px 15px;
+  text-align: center;
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 45px;
+}
+
+.TitleSection_container__fKu6R {
+  padding: 0 var(--container-padding);
+  position: relative;
+  z-index: 1;
+}
+
+.TitleSection_heading__Mziy4 {
+  font-weight: 400;
+  font-size: 54.8px;
+  line-height: 67.2px;
+  background: radial-gradient(circle, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.4) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}

@@ -1,0 +1,108 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.timeline {
+  position: relative;
+  margin-top: 206px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    background: $color-border-dark;
+    z-index: 0;
+  }
+}
+
+.containerLine {
+  padding: 0 80px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 64px;
+  position: relative;
+  position: sticky;
+  top: 0;
+  background: $color-black;
+  z-index: 1;
+  will-change: opacity, transform;
+}
+
+.dot {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: $color-white;
+  z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  .section:hover & {
+    transform: translate(-50%, -50%) scale(1.5);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.leftContent {
+  width: 544px;
+  display: grid;
+  gap: 24px;
+}
+
+.rightContent {
+  display: grid;
+  gap: 42px;
+}
+
+.title {
+  @include section-title;
+}
+
+.desc {
+  color: $color-text-muted;
+  line-height: $line-height-desc;
+  font-size: $font-size-desc;
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.imgWrapperGlow {
+  position: relative;
+}
+
+.img {
+  position: relative;
+  z-index: 1;
+}
+
+.pad1 { padding: 120px 96px; }
+.pad2 { padding: 110px 0; }
+.pad3 { padding: 165px 0; }
+.pad4 { padding: 120px 48px; }
+.pad5 { padding: 212px 30px; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

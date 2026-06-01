@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+@mixin gradient-text {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin hero-title {
+  font-weight: 400;
+  font-size: $font-size-hero;
+  line-height: $line-height-hero;
+  @include gradient-text;
+}
+
+@mixin section-title {
+  font-weight: 400;
+  font-size: $font-size-section;
+  line-height: $line-height-section;
+  @include gradient-text;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

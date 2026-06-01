@@ -1,0 +1,44 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  --container-padding: 120px;
+  --header-padding: 72px;
+  --font-oswald: var(--font-oswald), sans-serif;
+  --font-jetbrains: var(--font-jetbrains-mono), monospace;
+  --font-iceberg: var(--font-iceberg), sans-serif;
+}
+
+body {
+  font-family: var(--font-onest), sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-white;
+  background: $color-black;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}

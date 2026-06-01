@@ -1,0 +1,22 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.title {
+  @include flex-center;
+  margin: 360px 15px;
+  text-align: center;
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 45px;
+}
+
+.container {
+  padding: 0 var(--container-padding);
+  position: relative;
+  z-index: 1;
+}
+
+.heading {
+  @include hero-title;
+}

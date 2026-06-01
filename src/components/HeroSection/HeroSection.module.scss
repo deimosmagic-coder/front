@@ -1,0 +1,91 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.hero {
+  padding: 208px 0 64px;
+}
+
+.container {
+  padding: 0 var(--container-padding);
+}
+
+.content {
+  display: grid;
+  gap: 24px;
+}
+
+.title {
+  @include hero-title;
+  animation: fadeInUp 0.8s ease both;
+}
+
+.desc {
+  color: $color-text-muted;
+  line-height: $line-height-desc;
+  font-size: $font-size-desc;
+  animation: fadeInUp 0.8s ease 0.15s both;
+}
+
+.joinButton {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 9px 25px;
+  outline: none;
+  border: 1px solid $color-border;
+  border-radius: 35px;
+  line-height: 22.7px;
+  font-size: 16px;
+  color: $color-white;
+  background-color: $color-bg-card;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+  width: fit-content;
+  animation: fadeInUp 0.8s ease 0.3s both;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: #1a1a1a;
+  }
+}
+
+.contentInfo {
+  margin-top: 100px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  animation: fadeInUp 0.8s ease 0.45s both;
+}
+
+.borderImg {
+  background-color: $color-bg-dark;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.infoTitle {
+  color: $color-gray;
+  line-height: 20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.infoDesc {
+  color: $color-white;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
