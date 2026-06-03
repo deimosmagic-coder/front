@@ -86,8 +86,6 @@
   margin-right: 16px;
   flex-shrink: 0;
 }
-
-
 .sec {
   display: flex;
   flex-direction: column;
@@ -151,7 +149,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  max-width: 220px;
+  width: 220px;
   height: 100%;
 }
 
@@ -208,6 +206,10 @@
 }
 
 .mainImage {
+  position: relative;
+}
+
+.change{
   max-width: 1250px;
   position: relative;
 }
@@ -308,4 +310,335 @@
   flex-direction: column; 
   align-items: center;
   gap: 4px;
+}
+.warn{
+  max-width: 331px;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .header {
+    padding: 0 20px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .headerInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .credits {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .time {
+    margin-left: 0;
+  }
+
+  .mainContainer {
+    padding: 0 20px;
+    flex-direction: column;
+    padding-bottom: 120px;
+  }
+
+  .content {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .heroInfo {
+    order: 2;
+  }
+
+  .sec {
+    order: 1;
+  }
+
+  .guest {
+    order: 3;
+    margin-bottom: 20px; 
+  }
+
+  .mainInformation {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .avatarBorder {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .avatar {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mainImage {
+    width: 100%;
+    max-width: 100%;
+    
+    .corner {
+      display: none; 
+    }
+  }
+
+  .change {
+    max-width: 100%;
+    width: 100%;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .quote {
+    margin-bottom: 20px;
+  }
+}
+
+.mobileButtons {
+  display: none;
+  
+  @media (max-width: 768px) {
+    display: flex;
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 100;
+  }
+}
+
+.navButton,
+.aboutButton {
+  flex: 1;
+  padding: 15px;
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navButton {
+  background-color: #E84A4A;
+  color: #000;
+  
+  &:hover {
+    background-color: #ff5a5a;
+  }
+}
+
+.aboutButton {
+  background-color: transparent;
+  color: #E84A4A;
+  border: 2px solid #E84A4A;
+  
+  &:hover {
+    background-color: rgba(232, 74, 74, 0.1);
+  }
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 200;
+  overflow-y: auto;
+  padding: 20px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #E84A4A;
+}
+
+.menuTitle {
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &:hover {
+    color: #E84A4A;
+  }
+}
+
+.levelInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 15px;
+  background: rgba(232, 74, 74, 0.1);
+  border: 1px solid #E84A4A;
+}
+
+.levelBlock {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.levelNumber {
+  font-family: var(--font-oswald), "Oswald", sans-serif;
+  font-size: 42px;
+  color: #7DFF68;
+  font-weight: 700;
+}
+
+.levelLabel {
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.coinsBlock {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.plusIcon {
+  color: #7DFF68;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.coinsNumber {
+  font-family: var(--font-oswald), "Oswald", sans-serif;
+  font-size: 32px;
+  color: #7DFF68;
+  font-weight: 700;
+}
+
+.coinsLabel {
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+  font-size: 10px;
+  color: #7A7A7A;
+  text-transform: uppercase;
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 100px;
+  
+  .borderStyle {
+    margin-left: 0;
+    width: 100%;
+    
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.menuFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(232, 74, 74, 0.05);
+}
+
+.footerItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(232, 74, 74, 0.3);
+}
+
+.footerLabel {
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+  font-size: 14px;
+  color: #E84A4A;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footerIcon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #E84A4A;
+  color: #E84A4A;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footerIconRed {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #E84A4A;
+  background-color: #E84A4A;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
 }

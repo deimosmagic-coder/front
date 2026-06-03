@@ -7,6 +7,7 @@ import styles from './Portfolio.module.scss';
 export default function Portfolio() {
   const [serverTime, setServerTime] = useState('8:42');
   const [localTime, setLocalTime] = useState('15:42');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     document.body.style.maxWidth = 'none';
@@ -110,8 +111,64 @@ export default function Portfolio() {
             <span className={`${styles.corner} ${styles.topRight}`}></span>
             <span className={`${styles.corner} ${styles.bottomLeft}`}></span>
             <span className={`${styles.corner} ${styles.bottomRight}`}></span>
-            <img src="/portf/images/image1.svg" alt="Main" />
+
+            <div className="change">
+              <img src="/portf/images/image1.svg" alt="Main" />
+              {/* <div className="stack">
+                <div className="data">
+                  <p>stack</p>
+                </div>
+                <div className={styles.warn}>
+                  <div className={styles.details}>
+                    <div className={styles.border}>
+                      <p className={`${styles.realTitle} ${styles.questWhite}`}>details</p>
+                    </div>
+                    <div className={styles.information}>
+                      <p className={styles.infoTitle}>project name</p>
+                      <p className={styles.realTitle}>Portfolio</p>
+                    </div> 
+                    <div className={styles.information}>
+                      <p className={styles.infoTitle}>brief</p>
+                      <p className={styles.realTitle}>one sentence explanation for what the project is.</p>
+                    </div>
+                  </div>
+                  <div className={styles.technologies}>
+                    <div className={styles.border}>
+                      <p className={`${styles.realTitle} ${styles.questWhite}`}>technologies</p>
+                    </div>
+                  </div>
+                  <div className={styles.aboutme}>
+                    <div>
+                      <p className={styles.infoTitle}>about</p>
+                      <p className={`${styles.infoTitle} ${styles.goalContent} ${styles.gray}`}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Lorem voluptate elit aliquip veniam nisi cillum anim ex quis ullamco 
+                        dolor anim duis dolore consectetur velit. In cillum exercitation nostrud 
+                        adipiscing sed laboris dolore minim consectetur tempor.
+                        Exercitation tempor amet ut reprehenderit aliquip sit cupidatat eiusmod 
+                        dolore nisi ex labore ipsum exercitation sint amet. Ea nostrud quis id 
+                        sit nulla occaecat non proident in et exercitation occaecat mollit. Duis 
+                        cillum cupidatat pariatur minim non elit quis anim occaecat nulla ex ex 
+                        aute irure. Exercitation ut minim consequat laborum exercitation 
+                        excepteur exercitation velit enim est.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="file-explorer">
+                  <div className="explorer-title">
+                    <p>file xplorer</p>
+                  </div>
+                  <div className="location">
+                    <p>location:  /projects/the-name</p>
+                  </div>
+
+                </div>
+                
+              </div> */}
+            </div>
           </div>
+
           <div className={styles.navigation}>
             <div className={`${styles.borderStyle} ${styles.margin}`}>
               <div className={styles.border}>
@@ -128,7 +185,7 @@ export default function Portfolio() {
             
             <Link href="/main" className={`${styles.borderStyle} ${styles.margin}`}>
               <div className={styles.border}>
-                <p className={`${styles.realTitle} ${styles.questWhite}`}>logs</p>
+                <p className={`${styles.realTitle} ${styles.questWhite}`}>Creations</p>
               </div>
               <div className={`${styles.styleTitle} ${styles.grayBorder}`}>
                 <p className={`${styles.infoTitle} ${styles.gray} ${styles.buttonsStyle}`}>
@@ -141,7 +198,7 @@ export default function Portfolio() {
             
             <div className={`${styles.borderStyle} ${styles.margin}`}>
               <div className={styles.border}>
-                <p className={`${styles.realTitle} ${styles.questWhite}`}>creations</p>
+                <p className={`${styles.realTitle} ${styles.questWhite}`}>stack</p>
               </div>
               <div className={`${styles.styleTitle} ${styles.grayBorder}`}>
                 <p className={`${styles.infoTitle} ${styles.gray} ${styles.buttonsStyle}`}>
@@ -151,8 +208,94 @@ export default function Portfolio() {
                 </p>
               </div>
             </div>
-          </div> 
+          </div>
+          
         </section>
+
+        <div className={styles.mobileButtons}>
+          <button 
+            className={styles.navButton}
+            onClick={() => setIsMenuOpen(true)}
+          >
+            NAVIGATION
+          </button>
+          <button className={styles.aboutButton}>
+            ABOUT
+          </button>
+        </div>
+
+        {isMenuOpen && (
+          <div className={styles.mobileMenu}>
+            <div className={styles.menuHeader}>
+              <h2 className={styles.menuTitle}>NAVIGATION</h2>
+              <button 
+                className={styles.closeButton}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                ✕
+              </button>
+            </div>
+            
+            <div className={styles.levelInfo}>
+              <div className={styles.levelBlock}>
+                <span className={styles.levelNumber}>24</span>
+                <span className={styles.levelLabel}>LEVEL</span>
+              </div>
+            </div>
+
+            <div className={styles.menuContent}>
+              <div className={`${styles.borderStyle}`}>
+                <div className={styles.border}>
+                  <p className={`${styles.realTitle} ${styles.questWhite}`}>BEGGINNING</p>
+                </div>
+                <div className={`${styles.styleTitle} ${styles.grayBorder}`}>
+                  <p className={`${styles.infoTitle} ${styles.gray} ${styles.buttonsStyle}`}>
+                    Suscipit est consequatur<br />
+                    nemo voluptatem est<br />
+                    labore saepe.
+                  </p>
+                </div>
+              </div>
+              
+              <div className={`${styles.borderStyle}`}>
+                <div className={styles.border}>
+                  <p className={`${styles.realTitle} ${styles.questWhite}`}>LOGS</p>
+                </div>
+                <div className={`${styles.styleTitle} ${styles.grayBorder}`}>
+                  <p className={`${styles.infoTitle} ${styles.gray} ${styles.buttonsStyle}`}>
+                    Suscipit est consequatur<br />
+                    nemo voluptatem est<br />
+                    labore saepe.
+                  </p>
+                </div>
+              </div>
+              
+              <Link href="/main" className={`${styles.borderStyle}`}>
+                <div className={styles.border}>
+                  <p className={`${styles.realTitle} ${styles.questWhite}`}>CREATIONS</p>
+                </div>
+                <div className={`${styles.styleTitle} ${styles.grayBorder}`}>
+                  <p className={`${styles.infoTitle} ${styles.gray} ${styles.buttonsStyle}`}>
+                    Suscipit est consequatur<br />
+                    nemo voluptatem est<br />
+                    labore saepe.
+                  </p>
+                </div>
+              </Link>
+            </div>
+            <div className={styles.mobileButtons}>
+              <button 
+                className={styles.navButton}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                NAVIGATION
+              </button>
+              <button className={styles.aboutButton}>
+                ABOUT
+              </button>
+            </div>
+          </div>
+        )}
 
         <section className={styles.guest}>
           <div className={`${styles.borderStyle} ${styles.mainInformation}`}>
