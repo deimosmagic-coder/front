@@ -95,7 +95,6 @@
 .avatarBorder {
   padding: 14px;
   border: 1px solid rgba(255, 255, 255, 0.13);
-  position: relative;
   width: 218px;
   height: 218px;
 }
@@ -110,39 +109,6 @@
     object-fit: cover;
     display: block;
   }
-}
-
-.corner {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-color: #ff4d4d;
-  border-style: solid;
-  pointer-events: none;
-}
-
-.topLeft {
-  top: -1px;
-  left: -1px;
-  border-width: 2px 0 0 2px;
-}
-
-.topRight {
-  top: -1px;
-  right: -1px;
-  border-width: 2px 2px 0 0;
-}
-
-.bottomLeft {
-  bottom: -1px;
-  left: -1px;
-  border-width: 0 0 2px 2px;
-}
-
-.bottomRight {
-  bottom: -1px;
-  right: -1px;
-  border-width: 0 2px 2px 0;
 }
 
 .mainInformation {
@@ -203,10 +169,6 @@
 
 .quoteName {
   color: #E84A4A;
-}
-
-.mainImage {
-  position: relative;
 }
 
 .change{
@@ -389,9 +351,8 @@
   .mainImage {
     width: 100%;
     max-width: 100%;
-    
-    .corner {
-      display: none; 
+    > div > span {
+      display: none !important;
     }
   }
 

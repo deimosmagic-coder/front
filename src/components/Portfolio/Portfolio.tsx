@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styles from './Portfolio.module.scss';
+import { CornerBorder, NavigationCard, InfoField } from './UI';
+import { MobileMenu } from './MobileMenu';
 
 export default function Portfolio() {
   const [serverTime, setServerTime] = useState('8:42');
@@ -66,36 +68,33 @@ export default function Portfolio() {
       <div className={styles.mainContainer}>
         <section className={`${styles.heroInfo} ${styles.content}`}>
           <div className={styles.mainInformation}>
-            <div className={styles.avatarBorder}>
-              <span className={`${styles.corner} ${styles.topLeft}`}></span>
-              <span className={`${styles.corner} ${styles.topRight}`}></span>
-              <span className={`${styles.corner} ${styles.bottomLeft}`}></span>
-              <span className={`${styles.corner} ${styles.bottomRight}`}></span>
+            <CornerBorder className={styles.avatarBorder}>
               <div className={styles.avatar}>
                 <img src="/portf/images/avatar.png" alt="Avatar" />
               </div>
-            </div>
-            <div className={styles.information}>
-              <p className={styles.infoTitle}>NAME</p>
+            </CornerBorder>
+            
+            <InfoField label="NAME">
               <p className={styles.realTitle}>ДИАНА ГЛИМНУРОВА</p>
-            </div> 
-            <div className={styles.information}>
-              <p className={styles.infoTitle}>occupation</p>
+            </InfoField>
+            
+            <InfoField label="occupation">
               <p className={styles.realTitle}>FRONTEND DEVELOPER</p>
-            </div> 
-            <div className={styles.information}>
-              <p className={styles.infoTitle}>availability</p>
+            </InfoField>
+            
+            <InfoField label="availability">
               <div className={styles.border}>
                 <p className={`${styles.realTitle} ${styles.hire}`}>open for hire</p>
               </div>
-            </div> 
-            <div className={styles.information}>
-              <p className={styles.infoTitle}>social</p>
+            </InfoField>
+            
+            <InfoField label="social">
               <div className={styles.social}>
                 <p className={styles.realTitle}>open connection</p>
                 <img src="/portf/images/Frame.png" alt="Social" />
               </div>
-            </div> 
+            </InfoField>
+            
             <div className={`${styles.information} ${styles.quote}`}>
               <p className={`${styles.infoTitle} ${styles.quoteName}`}>Джонни Сильверхенд</p>
               <p className={`${styles.infoTitle} ${styles.quoteTitle}`}>
@@ -106,110 +105,53 @@ export default function Portfolio() {
         </section>
 
         <section className={`${styles.sec} ${styles.content}`}>
-          <div className={styles.mainImage}>
-            <span className={`${styles.corner} ${styles.topLeft}`}></span>
-            <span className={`${styles.corner} ${styles.topRight}`}></span>
-            <span className={`${styles.corner} ${styles.bottomLeft}`}></span>
-            <span className={`${styles.corner} ${styles.bottomRight}`}></span>
-
+          <CornerBorder className={styles.mainImage}>
             <div className="change">
               <img src="/portf/images/image1.svg" alt="Main" />
-              {/* <div className="stack">
-                <div className="data">
-                  <p>stack</p>
-                </div>
-                <div className={styles.warn}>
-                  <div className={styles.details}>
-                    <div className={styles.border}>
-                      <p className={`${styles.realTitle} ${styles.questWhite}`}>details</p>
-                    </div>
-                    <div className={styles.information}>
-                      <p className={styles.infoTitle}>project name</p>
-                      <p className={styles.realTitle}>Portfolio</p>
-                    </div> 
-                    <div className={styles.information}>
-                      <p className={styles.infoTitle}>brief</p>
-                      <p className={styles.realTitle}>one sentence explanation for what the project is.</p>
-                    </div>
-                  </div>
-                  <div className={styles.technologies}>
-                    <div className={styles.border}>
-                      <p className={`${styles.realTitle} ${styles.questWhite}`}>technologies</p>
-                    </div>
-                  </div>
-                  <div className={styles.aboutme}>
-                    <div>
-                      <p className={styles.infoTitle}>about</p>
-                      <p className={`${styles.infoTitle} ${styles.goalContent} ${styles.gray}`}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Lorem voluptate elit aliquip veniam nisi cillum anim ex quis ullamco 
-                        dolor anim duis dolore consectetur velit. In cillum exercitation nostrud 
-                        adipiscing sed laboris dolore minim consectetur tempor.
-                        Exercitation tempor amet ut reprehenderit aliquip sit cupidatat eiusmod 
-                        dolore nisi ex labore ipsum exercitation sint amet. Ea nostrud quis id 
-                        sit nulla occaecat non proident in et exercitation occaecat mollit. Duis 
-                        cillum cupidatat pariatur minim non elit quis anim occaecat nulla ex ex 
-                        aute irure. Exercitation ut minim consequat laborum exercitation 
-                        excepteur exercitation velit enim est.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="file-explorer">
-                  <div className="explorer-title">
-                    <p>file xplorer</p>
-                  </div>
-                  <div className="location">
-                    <p>location:  /projects/the-name</p>
-                  </div>
-
-                </div>
-                
-              </div> */}
             </div>
-          </div>
+          </CornerBorder>
 
           <div className={styles.navigation}>
-            <div className={`${styles.borderStyle} ${styles.margin}`}>
-              <div className={styles.border}>
-                <p className={`${styles.realTitle} ${styles.questWhite}`}>Begginning</p>
-              </div>
-              <div className={`${styles.styleTitle} ${styles.grayBorder}`}>
-                <p className={`${styles.infoTitle} ${styles.gray} ${styles.buttonsStyle}`}>
+            <NavigationCard 
+              title="Begginning" 
+              description={
+                <>
                   Suscipit est consequatur<br />
                   nemo voluptatem est<br />
                   labore saepe.
-                </p>
-              </div>
-            </div>
+                </>
+              }
+              isGrayBorder
+              className={styles.margin}
+            />
             
-            <Link href="/main" className={`${styles.borderStyle} ${styles.margin}`}>
-              <div className={styles.border}>
-                <p className={`${styles.realTitle} ${styles.questWhite}`}>Creations</p>
-              </div>
-              <div className={`${styles.styleTitle} ${styles.grayBorder}`}>
-                <p className={`${styles.infoTitle} ${styles.gray} ${styles.buttonsStyle}`}>
+            <NavigationCard 
+              title="Creations" 
+              description={
+                <>
                   Suscipit est consequatur<br />
                   nemo voluptatem est<br />
                   labore saepe.
-                </p>
-              </div>
-            </Link>
+                </>
+              }
+              href="/main"
+              isGrayBorder
+              className={styles.margin}
+            />
             
-            <div className={`${styles.borderStyle} ${styles.margin}`}>
-              <div className={styles.border}>
-                <p className={`${styles.realTitle} ${styles.questWhite}`}>stack</p>
-              </div>
-              <div className={`${styles.styleTitle} ${styles.grayBorder}`}>
-                <p className={`${styles.infoTitle} ${styles.gray} ${styles.buttonsStyle}`}>
+            <NavigationCard 
+              title="stack" 
+              description={
+                <>
                   Suscipit est consequatur<br />
                   nemo voluptatem est<br />
                   labore saepe.
-                </p>
-              </div>
-            </div>
+                </>
+              }
+              isGrayBorder
+              className={styles.margin}
+            />
           </div>
-          
         </section>
 
         <div className={styles.mobileButtons}>
@@ -244,44 +186,42 @@ export default function Portfolio() {
             </div>
 
             <div className={styles.menuContent}>
-              <div className={`${styles.borderStyle}`}>
-                <div className={styles.border}>
-                  <p className={`${styles.realTitle} ${styles.questWhite}`}>BEGGINNING</p>
-                </div>
-                <div className={`${styles.styleTitle} ${styles.grayBorder}`}>
-                  <p className={`${styles.infoTitle} ${styles.gray} ${styles.buttonsStyle}`}>
+              <NavigationCard 
+                title="BEGGINNING" 
+                description={
+                  <>
                     Suscipit est consequatur<br />
                     nemo voluptatem est<br />
                     labore saepe.
-                  </p>
-                </div>
-              </div>
+                  </>
+                }
+                isGrayBorder
+              />
               
-              <div className={`${styles.borderStyle}`}>
-                <div className={styles.border}>
-                  <p className={`${styles.realTitle} ${styles.questWhite}`}>LOGS</p>
-                </div>
-                <div className={`${styles.styleTitle} ${styles.grayBorder}`}>
-                  <p className={`${styles.infoTitle} ${styles.gray} ${styles.buttonsStyle}`}>
+              <NavigationCard 
+                title="LOGS" 
+                description={
+                  <>
                     Suscipit est consequatur<br />
                     nemo voluptatem est<br />
                     labore saepe.
-                  </p>
-                </div>
-              </div>
+                  </>
+                }
+                isGrayBorder
+              />
               
-              <Link href="/main" className={`${styles.borderStyle}`}>
-                <div className={styles.border}>
-                  <p className={`${styles.realTitle} ${styles.questWhite}`}>CREATIONS</p>
-                </div>
-                <div className={`${styles.styleTitle} ${styles.grayBorder}`}>
-                  <p className={`${styles.infoTitle} ${styles.gray} ${styles.buttonsStyle}`}>
+              <NavigationCard 
+                title="CREATIONS" 
+                description={
+                  <>
                     Suscipit est consequatur<br />
                     nemo voluptatem est<br />
                     labore saepe.
-                  </p>
-                </div>
-              </Link>
+                  </>
+                }
+                href="/main"
+                isGrayBorder
+              />
             </div>
             <div className={styles.mobileButtons}>
               <button 

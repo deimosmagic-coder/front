@@ -1,0 +1,215 @@
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 200;
+  overflow-y: auto;
+  padding: 20px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #E84A4A;
+}
+
+.menuTitle {
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: #E84A4A;
+  }
+}
+
+.levelInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 15px;
+  background: rgba(232, 74, 74, 0.1);
+  border: 1px solid #E84A4A;
+}
+
+.levelBlock {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.levelNumber {
+  font-family: var(--font-oswald), "Oswald", sans-serif;
+  font-size: 42px;
+  color: #7DFF68;
+  font-weight: 700;
+}
+
+.levelLabel {
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.coinsBlock {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.plusIcon {
+  color: #7DFF68;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.coinsNumber {
+  font-family: var(--font-oswald), "Oswald", sans-serif;
+  font-size: 32px;
+  color: #7DFF68;
+  font-weight: 700;
+}
+
+.coinsLabel {
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+  font-size: 10px;
+  color: #7A7A7A;
+  text-transform: uppercase;
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 100px;
+}
+
+.menuFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(232, 74, 74, 0.05);
+}
+
+.footerItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(232, 74, 74, 0.3);
+}
+
+.footerLabel {
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+  font-size: 14px;
+  color: #E84A4A;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footerIcon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #E84A4A;
+  color: #E84A4A;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footerIconRed {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #E84A4A;
+  background-color: #E84A4A;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.mobileButtons {
+  display: flex;
+  gap: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 100;
+}
+
+.navButton,
+.aboutButton {
+  flex: 1;
+  padding: 15px;
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navButton {
+  background-color: #E84A4A;
+  color: #000;
+
+  &:hover {
+    background-color: #ff5a5a;
+  }
+}
+
+.aboutButton {
+  background-color: transparent;
+  color: #E84A4A;
+  border: 2px solid #E84A4A;
+
+  &:hover {
+    background-color: rgba(232, 74, 74, 0.1);
+  }
+}

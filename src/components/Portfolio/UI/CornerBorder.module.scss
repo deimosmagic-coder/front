@@ -1,0 +1,37 @@
+.cornerBorder {
+  position: relative;
+}
+
+.corner {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-color: #ff4d4d;
+  border-style: solid;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.topLeft {
+  top: -1px;
+  left: -1px;
+  border-width: 2px 0 0 2px;
+}
+
+.topRight {
+  top: -1px;
+  right: -1px;
+  border-width: 2px 2px 0 0;
+}
+
+.bottomLeft {
+  bottom: -1px;
+  left: -1px;
+  border-width: 0 0 2px 2px;
+}
+
+.bottomRight {
+  bottom: -1px;
+  right: -1px;
+  border-width: 0 2px 2px 0;
+}
