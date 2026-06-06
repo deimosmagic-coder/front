@@ -20,3 +20,24 @@
 .heading {
   @include hero-title;
 }
+
+@media (max-width: $bp-mobile) {
+  .title {
+    margin: 80px 15px;
+    height: 400px;
+    border-radius: 25px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .heading {
+    font-size: 28px;
+    line-height: 36px;
+    
+    br {
+      display: none;
+    }
+  }
+}

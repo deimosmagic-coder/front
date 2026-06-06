@@ -89,3 +89,58 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: $bp-mobile) {
+  .hero {
+    padding: 120px 0 40px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .content {
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+    
+    br {
+      display: none;
+    }
+  }
+
+  .desc {
+    font-size: 14px;
+    line-height: 22px;
+    
+    br {
+      display: none;
+    }
+  }
+
+  .joinButton {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contentInfo {
+    margin-top: 60px;
+  }
+
+  .borderImg {
+    padding: 10px;
+  }
+
+  .infoTitle {
+    font-size: 11px;
+  }
+
+  .infoDesc {
+    font-size: 13px;
+  }
+}

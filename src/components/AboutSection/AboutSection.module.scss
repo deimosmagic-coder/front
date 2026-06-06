@@ -71,3 +71,64 @@
   border-bottom-right-radius: 80px;
   z-index: 1;
 }
+
+@media (max-width: $bp-mobile) {
+  .about {
+    padding: 60px 0;
+    margin-top: 80px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .aboutInfo {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .content {
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 36px;
+    
+    br {
+      display: none;
+    }
+  }
+
+  .desc {
+    font-size: 14px;
+    line-height: 22px;
+    
+    br {
+      display: none;
+    }
+  }
+
+  .glowWrapper {
+    width: 300px;
+    height: 300px;
+  }
+
+  .chatBubble {
+    width: 120px;
+    height: 120px;
+    padding: 65px 35px 35px;
+
+    &::after {
+      width: 60px;
+      height: 60px;
+      bottom: -3px;
+      left: -2px;
+    }
+  }
+
+  .chatSmile {
+    width: 50px;
+    height: 25px;
+  }
+}

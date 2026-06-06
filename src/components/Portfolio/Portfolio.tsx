@@ -1,10 +1,13 @@
 'use client';
 
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import dynamic from 'next/dynamic';
 import styles from './Portfolio.module.scss';
 import { CornerBorder, NavigationCard, InfoField } from './UI';
-import { MobileMenu } from './MobileMenu';
+
+const SplineWrapper = dynamic(() => import('./SplineWrapper'), {
+  ssr: false,
+});
 
 export default function Portfolio() {
   const [serverTime, setServerTime] = useState('8:42');
@@ -272,6 +275,7 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
+          <SplineWrapper />
         </section>
       </div>
     </div>

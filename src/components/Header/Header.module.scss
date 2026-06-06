@@ -45,3 +45,19 @@
     background-color: #1a1a1a;
   }
 }
+
+@media (max-width: $bp-mobile) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .container {
+    padding: 15px 0;
+  }
+
+  .joinButton {
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

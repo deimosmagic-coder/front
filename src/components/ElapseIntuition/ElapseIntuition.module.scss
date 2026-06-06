@@ -50,4 +50,44 @@
   font-size: $font-size-desc;
 }
 
+@media (max-width: $bp-mobile) {
+  .section {
+    margin-top: 80px;
+  }
+
+  .container {
+    padding: 40px 20px;
+  }
+
+  .content {
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .ascii {
+    width: 140px;
+    height: auto;
+    transform: translate(-3px, -8px);
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .desc {
+    font-size: 14px;
+    line-height: 22px;
+    
+    br {
+      display: none;
+    }
+  }
+}
+
 
