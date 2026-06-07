@@ -171,9 +171,15 @@
   color: #E84A4A;
 }
 
-.change{
-  max-width: 1250px;
+.change {
+  max-width: 1344px;
   position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 .rewardsImages {

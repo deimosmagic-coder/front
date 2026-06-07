@@ -73,7 +73,7 @@ export default function Portfolio() {
           <div className={styles.mainInformation}>
             <CornerBorder className={styles.avatarBorder}>
               <div className={styles.avatar}>
-                <img src="/portf/images/avatar.png" alt="Avatar" />
+                <img src="portf/images/avatar2.png" alt="Avatar" />
               </div>
             </CornerBorder>
             
@@ -109,8 +109,8 @@ export default function Portfolio() {
 
         <section className={`${styles.sec} ${styles.content}`}>
           <CornerBorder className={styles.mainImage}>
-            <div className="change">
-              <img src="/portf/images/image1.svg" alt="Main" />
+            <div className={styles.change}>
+              <img src="/portf/images/image2.png" alt="Main" />
             </div>
           </CornerBorder>
 
