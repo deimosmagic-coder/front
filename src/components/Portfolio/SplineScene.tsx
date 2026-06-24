@@ -9,10 +9,8 @@ interface SplineSceneProps {
 export default function SplineScene({ scene }: SplineSceneProps) {
   return (
     <div style={{ 
-      width: '600px', 
-      height: '600px', 
-      overflow: 'visible', 
-      position: 'relative' 
+      width: '490px', 
+      height: '490px',  
     }}>
       <Spline scene={scene} />
     </div>

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import styles from './Portfolio.module.scss';
 import { CornerBorder, NavigationCard, InfoField } from './UI';
+import Stack from '../Stack/Stack';
 
 const SplineWrapper = dynamic(() => import('./SplineWrapper'), {
   ssr: false,
@@ -13,6 +14,8 @@ export default function Portfolio() {
   const [serverTime, setServerTime] = useState('8:42');
   const [localTime, setLocalTime] = useState('15:42');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState('begginning');
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
   useEffect(() => {
     document.body.style.maxWidth = 'none';
@@ -44,6 +47,12 @@ export default function Portfolio() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
   return (
     <div className={styles.portfolio}>
       <header className={styles.header}> 
@@ -110,7 +119,10 @@ export default function Portfolio() {
         <section className={`${styles.sec} ${styles.content}`}>
           <CornerBorder className={styles.mainImage}>
             <div className={styles.change}>
-              <img src="/portf/images/image2.png" alt="Main" />
+              {activeTab ==='begginning' && (
+                <img src="/portf/images/image2.png" alt="Main" />
+              )}
+              {activeTab === 'stack' && <Stack/>}
             </div>
           </CornerBorder>
 
@@ -124,6 +136,7 @@ export default function Portfolio() {
                   labore saepe.
                 </>
               }
+              onClick={()=>setActiveTab('begginning')}
               isGrayBorder
               className={styles.margin}
             />
@@ -151,6 +164,7 @@ export default function Portfolio() {
                   labore saepe.
                 </>
               }
+              onClick={()=>setActiveTab('stack')}
               isGrayBorder
               className={styles.margin}
             />
@@ -190,7 +204,7 @@ export default function Portfolio() {
 
             <div className={styles.menuContent}>
               <NavigationCard 
-                title="BEGGINNING" 
+                title="Begginning" 
                 description={
                   <>
                     Suscipit est consequatur<br />
@@ -198,23 +212,12 @@ export default function Portfolio() {
                     labore saepe.
                   </>
                 }
+                onClick={()=>setActiveTab('begginning')}
                 isGrayBorder
               />
               
               <NavigationCard 
-                title="LOGS" 
-                description={
-                  <>
-                    Suscipit est consequatur<br />
-                    nemo voluptatem est<br />
-                    labore saepe.
-                  </>
-                }
-                isGrayBorder
-              />
-              
-              <NavigationCard 
-                title="CREATIONS" 
+                title="Creations" 
                 description={
                   <>
                     Suscipit est consequatur<br />
@@ -223,6 +226,19 @@ export default function Portfolio() {
                   </>
                 }
                 href="/main"
+                isGrayBorder
+              />
+              
+              <NavigationCard 
+                title="stack" 
+                description={
+                  <>
+                    Suscipit est consequatur<br />
+                    nemo voluptatem est<br />
+                    labore saepe.
+                  </>
+                }
+                onClick={()=>setActiveTab('stack')}
                 isGrayBorder
               />
             </div>
@@ -275,7 +291,7 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-          <SplineWrapper />
+          {isMobile === false && <SplineWrapper />}
         </section>
       </div>
     </div>

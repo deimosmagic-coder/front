@@ -31,3 +31,28 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin real-title {
+  font-family: var(--font-handjet), "Handjet", sans-serif;
+  font-size: 25px;
+  color: #E84A4A;
+  text-transform: uppercase;
+}
+
+@mixin info-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  letter-spacing: 0.075em;
+}
+
+@mixin label {
+  font-family: var(--font-iceland), "Iceland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 0.075em;
+}
+

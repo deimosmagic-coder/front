@@ -1,22 +1,30 @@
+@use '../../../styles/mixins' as *;
 .infoField {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  letter-spacing: 0.075em;
+  @include info-field;
 }
 
 .label {
-  font-family: var(--font-iceland), "Iceland", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin: 0;
+  @include label;
 }
 
 .content {
-  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
-  font-size: 18px;
-  color: #E84A4A;
-  text-transform: uppercase;
+  @include real-title;
+}
+
+@media (min-width: 2560px) {
+  .label{
+    font-size: 19px; 
+  }
+}
+
+@media (min-width: 3440px) {
+  .label{
+    font-size: 25px; 
+  }
+}
+
+@media (min-width: 3840px) {
+  .label{
+    font-size: 28px;
+  }
 }

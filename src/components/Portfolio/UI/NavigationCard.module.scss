@@ -1,3 +1,4 @@
+@use '../../../styles/mixins' as *;
 .card {
   position: relative;
   height: fit-content;
@@ -29,11 +30,8 @@
 }
 
 .title {
-  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
-  font-size: 18px;
+  @include real-title;
   color: #fff;
-  text-transform: uppercase;
-  margin: 0;
 }
 
 .description {
@@ -60,5 +58,32 @@
     &:hover {
       transform: none;
     }
+  }
+}
+
+@media (min-width: 2560px){
+  .title{
+    font-size: 24px; 
+  }
+  .descriptionText {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 3440px) {
+  .title{
+    font-size: 32px;
+  }
+  .descriptionText {
+    font-size: 25px; 
+  }
+}
+
+@media (min-width: 3480px) {
+  .title{
+    font-size: 36px; 
+  }
+  .descriptionText {
+    font-size: 28px;
   }
 }

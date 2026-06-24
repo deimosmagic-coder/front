@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Onest, Oswald, JetBrains_Mono, Iceberg, Iceland } from "next/font/google";
+import { Inter, Onest, Oswald, JetBrains_Mono, Iceberg, Iceland, Handjet} from "next/font/google";
 import "./globals.scss";
 
 const inter = Inter({
@@ -34,6 +34,12 @@ const iceland = Iceland({
   variable: "--font-iceland",
 });
 
+const handjet = Handjet({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-handjet",
+});
+
 export const metadata: Metadata = {
   title: "e/",
   description: "Elapse AI — Know exactly what your customers want",
@@ -45,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru" className={`${inter.variable} ${onest.variable} ${oswald.variable} ${jetbrainsMono.variable} ${iceberg.variable} ${iceland.variable}`}>
+    <html lang="ru" className={`${inter.variable} ${onest.variable} ${oswald.variable} ${jetbrainsMono.variable} ${iceberg.variable} ${iceland.variable} ${handjet.variable}`}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
