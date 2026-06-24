@@ -177,7 +177,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 15px 20px;
+  padding: 10px 15px;
   background: rgba(0, 0, 0, 0.95);
   z-index: 100;
 }
@@ -185,7 +185,7 @@
 .navButton,
 .aboutButton {
   flex: 1;
-  padding: 15px;
+  padding: 5px;
   font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
   font-size: 16px;
   font-weight: 700;

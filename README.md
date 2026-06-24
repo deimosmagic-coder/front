@@ -16,3 +16,5 @@ Next.js 14 · React 18 · TypeScript · SCSS · GSAP · Spline · Three.js
 ## Адаптив
 ![home-mobile](https://github.com/deimosmagic-coder/front/blob/main/demo/mobile_home_1.jpg)
 ![home-mobile2](https://github.com/deimosmagic-coder/front/blob/main/demo/mobile_home_2.jpg)
+
+Присутствует адаптив для всех типов экранов. Мобильная, планшет, экраны 1920, 2560, 3440, 3840

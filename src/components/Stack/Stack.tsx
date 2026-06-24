@@ -256,29 +256,29 @@ export default function Stack() {
             ))}
           </div>
         </div>
-
-        <div className={styles.aboutPanel}>
-          <p className={styles.aboutLabel}>About:</p>
-          <div className={styles.aboutText}>
-            <p>
-              The team has encountered several challenges during the development process, including unexpected system crashes, hardware malfunctions
-            </p>
-            <p>
-              and unanticipated compatibility issues. The team has encountered several challenges during the development process, including unexpected system crashes, hardware
-            </p>
-            {expanded && (
-              <p>
-                malfunctions, and unanticipated compatibility issues...The team has encountered several challenges during the development process, including unexpected system crashes, hardware malfunctions, and unanticipated compatibility issues...
-              </p>
-            )}
-          </div>
-          <button
-            className={styles.expandBtn}
-            onClick={() => setExpanded(prev => !prev)}>
-            {expanded ? '- collapse' : '+ expand'}
-          </button>
-        </div>
       </aside>
+
+      <div className={styles.aboutPanel}>
+        <p className={styles.aboutLabel}>About:</p>
+        <div className={styles.aboutText}>
+          <p>
+            The team has encountered several challenges during the development process, including unexpected system crashes, hardware malfunctions
+          </p>
+          <p>
+            and unanticipated compatibility issues. The team has encountered several challenges during the development process, including unexpected system crashes, hardware
+          </p>
+          {expanded && (
+            <p>
+              malfunctions, and unanticipated compatibility issues...The team has encountered several challenges during the development process, including unexpected system crashes, hardware malfunctions, and unanticipated compatibility issues...
+            </p>
+          )}
+        </div>
+        <button
+          className={styles.expandBtn}
+          onClick={() => setExpanded(prev => !prev)}>
+          {expanded ? '- collapse' : '+ expand'}
+        </button>
+      </div>
 
       <div className={styles.explorerWrapper}>
         <section className={styles.explorer}>

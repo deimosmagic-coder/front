@@ -48,7 +48,7 @@ export default function Portfolio() {
   }, []);
 
   useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth <= 768);
+    const check = () => setIsMobile(window.innerWidth <= 1024);
     check();
     window.addEventListener('resize', check);
     return () => window.removeEventListener('resize', check);
@@ -86,26 +86,28 @@ export default function Portfolio() {
               </div>
             </CornerBorder>
             
-            <InfoField label="NAME">
-              <p className={styles.realTitle}>ДИАНА ГЛИМНУРОВА</p>
-            </InfoField>
-            
-            <InfoField label="occupation">
-              <p className={styles.realTitle}>FRONTEND DEVELOPER</p>
-            </InfoField>
-            
-            <InfoField label="availability">
-              <div className={styles.border}>
-                <p className={`${styles.realTitle} ${styles.hire}`}>open for hire</p>
-              </div>
-            </InfoField>
-            
-            <InfoField label="social">
-              <div className={styles.social}>
-                <p className={styles.realTitle}>open connection</p>
-                <img src="/portf/images/Frame.png" alt="Social" />
-              </div>
-            </InfoField>
+            <div className={styles.infoGrid}>
+              <InfoField label="NAME">
+                <p className={styles.realTitle}>ДИАНА ГЛИМНУРОВА</p>
+              </InfoField>
+              
+              <InfoField label="occupation">
+                <p className={styles.realTitle}>FRONTEND DEVELOPER</p>
+              </InfoField>
+              
+              <InfoField label="availability">
+                <div className={styles.border}>
+                  <p className={`${styles.realTitle} ${styles.hire}`}>open for hire</p>
+                </div>
+              </InfoField>
+              
+              <InfoField label="social">
+                <div className={styles.social}>
+                  <p className={styles.realTitle}>open connection</p>
+                  <img src="/portf/images/Frame.png" alt="Social" />
+                </div>
+              </InfoField>
+            </div>
             
             <div className={`${styles.information} ${styles.quote}`}>
               <p className={`${styles.infoTitle} ${styles.quoteName}`}>Джонни Сильверхенд</p>

@@ -120,6 +120,10 @@
   height: 100%;
 }
 
+.infoGrid {
+  display: contents;
+}
+
 .information {
   display: flex;
   flex-direction: column;
@@ -427,6 +431,108 @@
   }
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+  .container {
+    padding: 30px 40px;
+  }
+
+  .mainContainer {
+    padding-inline: 40px;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 120px;
+  }
+
+  .heroInfo {
+    order: 2;
+    width: 100%;
+  }
+
+  .sec {
+    order: 1;
+    width: 100%;
+  }
+
+  .guest {
+    order: 3;
+    width: 100%;
+    display: block;
+    
+    .borderStyle {
+      width: 100%;
+    }
+    
+    .mainInformation {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+
+  .heroInfo .mainInformation {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 25px;
+    row-gap: 20px;
+    align-items: start;
+  }
+
+  .avatarBorder {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    width: 160px;
+    height: 160px;
+    padding: 10px;
+  }
+
+  .infoGrid {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    
+    > * {
+      &:nth-child(1),
+      &:nth-child(2) {
+        grid-row: 1;
+      }
+      
+      &:nth-child(3),
+      &:nth-child(4) {
+        grid-row: 2;
+      }
+    }
+  }
+
+  .quote {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    margin-top: 0;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .mainImage {
+    width: 100%;
+  }
+
+  .change {
+    width: 100%;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .portfolio {
     min-width: 100%;
@@ -530,14 +636,14 @@
 .mobileButtons {
   display: none;
   
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: flex;
     gap: 10px;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 15px 20px;
+    padding: 10px 15px;
     background: rgba(0, 0, 0, 0.95);
     z-index: 100;
   }
@@ -546,7 +652,7 @@
 .navButton,
 .aboutButton {
   flex: 1;
-  padding: 15px;
+  padding: 7px;
   font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
   font-size: 16px;
   font-weight: 700;
