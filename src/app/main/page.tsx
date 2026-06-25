@@ -1,22 +1,5 @@
-import Header from "@/components/Header/Header";
-import HeroSection from "@/components/HeroSection/HeroSection";
-import AboutSection from "@/components/AboutSection/AboutSection";
-import TitleSection from "@/components/TitleSection/TitleSection";
-import ElapseIntuition from "@/components/ElapseIntuition/ElapseIntuition";
-import Timeline from "@/components/Timeline/Timeline";
-import styles from "./page.module.scss";
+import LandingPage from "@/pages/Landing";
 
 export default function MainPage() {
-  return (
-    <div className={styles.mainPage}>
-      <Header />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <TitleSection />
-        <ElapseIntuition />
-        <Timeline />
-      </main>
-    </div>
-  );
+  return <LandingPage />;
 }
